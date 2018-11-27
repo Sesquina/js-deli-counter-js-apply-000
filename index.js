@@ -10,15 +10,17 @@ function currentLine(line){
   return ("The line is currently: " +lineNamesAndNumbers.join(', '));
 }
 
-
+var counter = 1 
 function takeANumber(line, name){
   line.push(name);
   return ("Welcome, " + name + ". You are number " + line.length + " in line.");
+  
 }
 
 function nowServing(katzDeliLine){
   if(katzDeliLine>[]){
-    return `Currently serving ${katzDeliLine.shift()}.`;
+  var myString=  `Currently serving ${katzDeliLine.shift()}.`;
+  console.log(katzDeliLine);
 }
 else{
   return "There is nobody waiting to be served!";
